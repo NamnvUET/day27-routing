@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { Article } from "./model/article";
+import { Article } from "../model/article";
 import { delay } from 'rxjs/operators';
 
 
@@ -22,7 +22,7 @@ const Articles: Article[] = [
 ];
 
 @Injectable({
-  providedIn: "root",
+  providedIn: 'root',
 })
 
 export class ArticleService{
