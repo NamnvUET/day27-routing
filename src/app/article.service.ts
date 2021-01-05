@@ -29,5 +29,10 @@ export class ArticleService{
   getArticles(): Observable<Article[]> {
     return of(Articles).pipe(delay(500));
   }
+
+  getArticleBySlug(slug: string): Observable<Article>{
+    let article = Articles.find((x) => {return x.slug === slug});
+    return of(article).pipe(delay(500))
+  }
 }
 
