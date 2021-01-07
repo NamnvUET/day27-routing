@@ -3,18 +3,7 @@ import { CommonModule } from '@angular/common';
 import { ArticleListComponent } from './article-list/article-list.component';
 import { ArticleDetailComponent } from './article-detail/article-detail.component';
 import { Routes, RouterModule } from '@angular/router';
-
-const routes: Routes = [
-  {
-    path: 'article',
-    component: ArticleListComponent,
-  },
-  {
-    path: 'article/:slug',
-    component: ArticleDetailComponent,
-  }
-
-];
+import { ArticleRoutingModule } from './article-routing.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +12,7 @@ const routes: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes),
+    ArticleRoutingModule,
   ],
   exports: [],
   providers: [],
