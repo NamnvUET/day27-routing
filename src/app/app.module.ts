@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ArticleModule } from './article/article.module';
 import { FormsModule } from '@angular/forms';
-import { AdminModule } from './admin/admin.module';
+// import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,7 @@ import { AdminModule } from './admin/admin.module';
     BrowserModule,
     FormsModule,
     ArticleModule,
-    AdminModule,
+    // AdminModule,
     AppRoutingModule,
   ],
   providers: [],

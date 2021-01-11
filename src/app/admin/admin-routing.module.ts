@@ -6,7 +6,7 @@ import { AdminComponent } from "./admin.component";
 
 const routes: Routes = [
   {
-    path: 'admin',
+    path: '',
     component: AdminComponent,
     children: [
       {
