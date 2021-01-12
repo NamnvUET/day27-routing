@@ -5,12 +5,14 @@ import { ArticleDetailComponent } from './article-detail/article-detail.componen
 import { Routes, RouterModule } from '@angular/router';
 import { ArticleRoutingModule } from './article-routing.module';
 import { ArticleComponent } from './article.component';
+import { ArticleEditComponent } from './article-edit/article-edit.component';
 
 @NgModule({
   declarations: [
     ArticleListComponent,
     ArticleDetailComponent,
-    ArticleComponent
+    ArticleComponent,
+    ArticleEditComponent
   ],
   imports: [
     CommonModule,
