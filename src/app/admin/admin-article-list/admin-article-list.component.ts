@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { ArticleService } from 'src/app/article/article.service';
+import { Article } from 'src/app/model/article';
 
 @Component({
   selector: 'app-admin-article-list',
@@ -7,9 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminArticleListComponent implements OnInit {
 
-  constructor() { }
+  articles$ : Observable<Article[]>;
+
+  constructor(private _api: ArticleService) { }
 
   ngOnInit(): void {
+    this.articles$ = this._api.getArticles();
+    this.articles$.subscribe(console.log);
   }
 
 }
