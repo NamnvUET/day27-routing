@@ -5,6 +5,7 @@ import { ArticleDetailComponent } from "./article-detail/article-detail.componen
 import { ArticleEditComponent } from "./article-edit/article-edit.component";
 import { ArticleListComponent } from "./article-list/article-list.component";
 import { ArticleComponent } from "./article.component";
+import { CanEditArticleGuard } from "./can-edit-article.guard";
 
 const routes: Routes = [
   {
@@ -22,6 +23,7 @@ const routes: Routes = [
       {
         path: ':slug/edit',
         component: ArticleEditComponent,
+        canActivate: [CanEditArticleGuard]    //<== Co the check multiple guards
       }
     ]
   }
