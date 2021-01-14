@@ -16,7 +16,6 @@ export class AdminArticleListComponent implements OnInit {
 
   ngOnInit(): void {
     this.articles$ = this._api.getArticles();
-    this.articles$.subscribe(console.log);
   }
 
 }
