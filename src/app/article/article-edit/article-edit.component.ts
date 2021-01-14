@@ -12,6 +12,8 @@ export class ArticleEditComponent implements OnInit {
     map(params => params.get('slug'))
   );
 
+  isEditing: boolean = false;
+
   constructor(private _activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
