@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { ArticleModule } from './article/article.module';
 import { FormsModule } from '@angular/forms';
 import { UserService } from './user.service';
-// import { AdminModule } from './admin/admin.module';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatDialogModule} from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,8 +16,9 @@ import { UserService } from './user.service';
     BrowserModule,
     FormsModule,
     ArticleModule,
-    // AdminModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
