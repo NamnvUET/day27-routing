@@ -15,4 +15,8 @@
     </a>
   </li>
 </ul>
+<div>
+  <p>Is Admin: {{ userService.currentUser.isAdmin }}</p>
+  <button mat-raised-button color="primary" (click)="toggleRole()">Toggle role</button>
+</div>
 <router-outlet></router-outlet>

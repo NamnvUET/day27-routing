@@ -5,7 +5,8 @@ import { Injectable } from '@angular/core';
 })
 export class UserService {
   currentUser = {
-    username: 'NamNV'
+    username: 'NamNV',
+    isAdmin: true,
   };
   constructor() { }
 
