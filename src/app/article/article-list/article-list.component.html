@@ -1,4 +1,4 @@
-<div class="row no-margin" *ngIf="articles$ | async as articles">
+<div class="row no-margin" *ngIf="articles$ | async as articles else loadingTmpl">
   <div class="col-md-3" *ngFor="let article of articles">
     <div class="card text-center">
       <div class="card-header">
@@ -13,3 +13,7 @@
     </div>
   </div>
 </div>
+
+<ng-template #loadingTmpl>
+  Loading...
+</ng-template>
