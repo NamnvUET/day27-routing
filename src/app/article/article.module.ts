@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { ArticleRoutingModule } from './article-routing.module';
 import { ArticleComponent } from './article.component';
 import { ArticleEditComponent } from './article-edit/article-edit.component';
+import { ConfirmDialogModule } from '../confirm-dialog/confirm-dialog.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ArticleEditComponent } from './article-edit/article-edit.component';
   imports: [
     CommonModule,
     ArticleRoutingModule,
+    ConfirmDialogModule,
   ],
   exports: [],
   providers: [],

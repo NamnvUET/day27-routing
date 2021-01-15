@@ -9,6 +9,7 @@ import {MatButtonModule} from '@angular/material/button';
   imports: [
     CommonModule,
     MatButtonModule,
-  ]
+  ],
+  exports: [ConfirmDialogComponent]
 })
 export class ConfirmDialogModule { }

@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { UserService } from './user.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +20,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatDialogModule,
+    MatButtonModule,
   ],
   providers: [UserService],
   bootstrap: [AppComponent]
