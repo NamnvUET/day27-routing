@@ -13,6 +13,10 @@ const routes: Routes = [
     path: "",
     redirectTo: 'article',
     pathMatch: "full",
+  },
+  {
+    path: "component-interaction",
+    loadChildren: () => import("../app/component-interaction/component-interaction.module").then(m => m.ComponentInteractionModule),
   }
 ];
 
