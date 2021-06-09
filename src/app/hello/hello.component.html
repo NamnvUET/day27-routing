@@ -1,4 +1,5 @@
-<h2>Hello There!</h2>
+<!-- Day 03 begin here-->
+<h2>Hello There! Day 03 begin here</h2>
 <!-- String Interpolation -->
 <h3>Your name: {{user.name}}</h3>
 <h3>Your age: {{user.age}}</h3>
@@ -7,3 +8,30 @@
 <br>
 <!--Twoway binding test-->
 <input type="text" [(ngModel)] = "user.name">
+
+<!-- Day 04 begin here-->
+<h2>Hello There! Day 04 begin here</h2>
+
+<div>Cheating, sửa tuổi thử ở đây xem:</div>
+
+<input type="number" [(ngModel)] = "user.age">
+<br><hr>
+
+<!-- If Else structure directive-->
+<div *ngIf = "user.age >= 13; else noPG13">
+    Bạn có thể xem nội dung PG-13
+</div>
+
+<!-- Hoặc sử dụng property binding như sau-->
+<ng-template [ngIf]=" user.age >= 13 " [ngIfElse]="noPG13">
+  <div>
+    Bạn có thể xem nội dung PG-13
+  </div>
+</ng-template>
+
+  <!--Template sẽ dùng-->
+  <ng-template #noPG13>
+    <div>
+      Bạn không thể xem nội dung PG-13
+    </div>
+  </ng-template>
