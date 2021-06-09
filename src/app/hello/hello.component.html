@@ -1,1 +1,9 @@
-<p>hello works!</p>
+<h2>Hello There!</h2>
+<!-- String Interpolation -->
+<h3>Your name: {{user.name}}</h3>
+<h3>Your age: {{user.age}}</h3>
+<!-- Event binding -->
+<button (click) = "showInfo()">Click here to show </button>
+<br>
+<!--Twoway binding test-->
+<input type="text" [(ngModel)] = "user.name">
