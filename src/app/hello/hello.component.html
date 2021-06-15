@@ -1,4 +1,7 @@
 <!-- Day 05 ngFor Structure Directive -->
-<div *ngFor="let author of authors">
+<div *ngFor="let author of authors; index as idx; count as total; first as frs">
   {{author.id}} : {{author.firstName}} {{author.lastName}}
+  <div *ngIf="frs">
+    la phan tu dau tien cua mang
+  </div>
 </div>
