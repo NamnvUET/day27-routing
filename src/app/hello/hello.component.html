@@ -1,7 +1,12 @@
 <!-- Day 05 ngFor Structure Directive -->
 <div *ngFor="let author of authors; index as idx; count as total; first as frs">
   {{author.id}} : {{author.firstName}} {{author.lastName}}
-  <div *ngIf="frs">
+  <ng-container *ngIf= "frs; else templateName">
     la phan tu dau tien cua mang
-  </div>
+  </ng-container>
 </div>
+
+<ng-template #templateName>
+  khong phai la phan tu dau tien cua mang
+</ng-template>
+
